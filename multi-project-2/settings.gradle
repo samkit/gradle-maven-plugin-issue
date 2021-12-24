@@ -1,4 +1,0 @@
-rootProject.name = 'multi-project-2'
-include 'lib1'
-include 'app'
-

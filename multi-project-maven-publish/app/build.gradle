@@ -1,0 +1,9 @@
+plugins {
+    id 'java-library'
+    id 'maven'
+}
+
+dependencies {
+    api project(path: ":lib1", configuration: "shadow")
+}
+

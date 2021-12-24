@@ -1,0 +1,13 @@
+plugins {
+    id 'java-library'
+    id 'com.github.johnrengelman.shadow' version '6.1.0'
+}
+
+dependencies {
+    api 'org.junit.jupiter:junit-jupiter-api:5.7.2'
+}
+
+shadowJar {
+    archiveClassifier.set("shaded")
+    relocate("org.", "example.org.")
+}
